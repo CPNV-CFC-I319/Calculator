@@ -14,7 +14,10 @@ class MathLib:
             case 'mul':
                 math_request.set_res(ope1 * ope2)
             case 'div':
-                raise NotImplementedError
+                if ope2 == 0:
+                    print("Error: Division by zero is undefined.")
+                    return
+                math_request.set_res(ope1 / ope2)
             case 'pow':
                 raise NotImplementedError
             case 'root':

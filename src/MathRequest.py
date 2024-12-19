@@ -13,7 +13,7 @@ class MathRequest:
         return self.operator
 
     def get_ope2(self):
-        raise NotImplementedError
+        return self.ope2
 
     def get_res(self):
         raise NotImplementedError

@@ -10,7 +10,7 @@ class MathRequest:
         return self.ope1
 
     def get_operator(self):
-        raise NotImplementedError
+        return self.operator
 
     def get_ope2(self):
         raise NotImplementedError

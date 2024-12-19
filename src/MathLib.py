@@ -10,7 +10,7 @@ class MathLib:
             case 'add':
                 math_request.set_res(ope1 + ope2)
             case 'sub':
-                raise NotImplementedError
+                math_request.set_res(ope1 - ope2)
             case 'mul':
                 raise NotImplementedError
             case 'div':

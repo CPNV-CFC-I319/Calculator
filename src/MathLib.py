@@ -23,7 +23,7 @@ class MathLib:
             case 'root':
                 math_request.set_res(MathLib.__root(ope1, ope2))
             case _:
-                raise NotImplementedError
+                raise OperatorNotSupportedException
 
     @staticmethod
     def __root(ope1, ope2):

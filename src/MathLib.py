@@ -21,13 +21,13 @@ class MathLib:
             case 'pow':
                 math_request.set_res(ope1 ** ope2)
             case 'root':
-                raise NotImplementedError
+                math_request.set_res(MathLib.__root(ope1, ope2))
             case _:
                 raise NotImplementedError
 
     @staticmethod
     def __root(ope1, ope2):
-        raise NotImplementedError
+        return round(ope1 ** (1 / ope2), 2)
 
 class MathLibException(Exception):
     pass

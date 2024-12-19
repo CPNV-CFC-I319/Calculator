@@ -2,11 +2,13 @@ class MathLib:
 
     @classmethod
     def execute(cls, math_request):
-        operator = None
+        ope1 = math_request.get_ope1()
+        operator = math_request.get_operator()
+        ope2 = math_request.get_ope2()
 
         match operator:
             case 'add':
-                raise NotImplementedError
+                math_request.set_res(ope1 + ope2)
             case 'sub':
                 raise NotImplementedError
             case 'mul':

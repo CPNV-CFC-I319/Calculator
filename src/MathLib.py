@@ -19,7 +19,7 @@ class MathLib:
                     return
                 math_request.set_res(ope1 / ope2)
             case 'pow':
-                raise NotImplementedError
+                math_request.set_res(ope1 ** ope2)
             case 'root':
                 raise NotImplementedError
             case _:

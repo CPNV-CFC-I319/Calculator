@@ -16,10 +16,10 @@ class MathRequest:
         return self.ope2
 
     def get_res(self):
-        raise NotImplementedError
+        return self.res
 
     def set_res(self, value):
-        raise NotImplementedError
+        self.res = value
 
     def to_string(self):
-        raise NotImplementedError
+        return f'{self.ope1} + {self.ope2} = {self.res}'
